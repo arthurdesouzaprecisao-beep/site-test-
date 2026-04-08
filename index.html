@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encanto de Vênus | Lingerie de Luxo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ══════════════ HEADER ══════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <span class="logo__symbol">♀</span>
+        <span class="logo__text">Encanto<em>de Vênus</em></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#colecoes" class="nav__link">Coleções</a></li>
+          <li><a href="#conjuntos" class="nav__link">Conjuntos</a></li>
+          <li><a href="#lingerie" class="nav__link">Lingerie</a></li>
+          <li><a href="#ofertas" class="nav__link">Ofertas</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <button class="icon-btn" aria-label="Buscar" id="searchBtn">
+          <i class="fa-regular fa-magnifying-glass"></i>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Carrinho" id="cartBtn">
+          <i class="fa-regular fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="#colecoes" class="nav__link">Coleções</a></li>
+        <li><a href="#conjuntos" class="nav__link">Conjuntos</a></li>
+        <li><a href="#lingerie" class="nav__link">Lingerie</a></li>
+        <li><a href="#ofertas" class="nav__link">Ofertas</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-layer"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Nova Coleção · Primavera 2025</p>
+        <h1 class="hero__title">
+          A arte de<br />
+          <em>sentir-se linda</em><br />
+          por dentro.
+        </h1>
+        <p class="hero__sub">Peças criadas para celebrar cada curva com elegância e sensualidade.</p>
+        <div class="hero__cta-group">
+          <a href="#colecoes" class="btn btn--primary">Explorar Coleção</a>
+          <a href="#ofertas" class="btn btn--ghost">Ver Ofertas</a>
+        </div>
+      </div>
+      <div class="hero__ornament hero__ornament--left"></div>
+      <div class="hero__ornament hero__ornament--right"></div>
+      <div class="hero__scroll-indicator">
+        <span>Role para baixo</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ══════════════ STRIP ══════════════ -->
+    <div class="strip">
+      <div class="strip__inner">
+        <span><i class="fa-solid fa-truck"></i> Frete grátis acima de R$199</span>
+        <span class="strip__divider">|</span>
+        <span><i class="fa-solid fa-shield-heart"></i> Troca fácil e sem custo</span>
+        <span class="strip__divider">|</span>
+        <span><i class="fa-solid fa-lock"></i> Pagamento 100% seguro</span>
+        <span class="strip__divider">|</span>
+        <span><i class="fa-solid fa-star"></i> +12 mil clientes satisfeitas</span>
+      </div>
+    </div>
+
+    <!-- ══════════════ CATEGORIAS ══════════════ -->
+    <section class="categories" id="colecoes">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Navegue por</p>
+          <h2 class="section-header__title">Nossas Coleções</h2>
+          <div class="section-header__line"></div>
+        </header>
+        <div class="categories__grid">
+          <a href="#" class="cat-card" style="--cat-bg: linear-gradient(160deg,#3a0d1e,#6b1d35);">
+            <div class="cat-card__overlay"></div>
+            <div class="cat-card__content">
+              <h3>Lingerie</h3>
+              <span>Ver tudo <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="#" class="cat-card" style="--cat-bg: linear-gradient(160deg,#1a0a05,#4a2218);">
+            <div class="cat-card__overlay"></div>
+            <div class="cat-card__content">
+              <h3>Conjuntos</h3>
+              <span>Ver tudo <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="#" class="cat-card" style="--cat-bg: linear-gradient(160deg,#2a1230,#5a2060);">
+            <div class="cat-card__overlay"></div>
+            <div class="cat-card__content">
+              <h3>Pijamas</h3>
+              <span>Ver tudo <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ PRODUTOS ══════════════ -->
+    <section class="products" id="lingerie">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Destaques</p>
+          <h2 class="section-header__title">Escolhas da Temporada</h2>
+          <div class="section-header__line"></div>
+        </header>
+
+        <div class="products__grid" id="productsGrid">
+
+          <!-- Card 1 -->
+          <article class="product-card" data-id="1" data-name="Conjunto Blossom Noir" data-price="289.90">
+            <div class="product-card__media">
+              <div class="product-card__img-placeholder" style="--p-color:#2d0b18;">
+                <i class="fa-light fa-gem"></i>
+              </div>
+              <div class="product-card__badges">
+                <span class="badge badge--new">Novo</span>
+              </div>
+              <div class="product-card__hover-actions">
+                <button class="hover-btn" aria-label="Favoritar"><i class="fa-regular fa-heart"></i></button>
+                <button class="hover-btn" aria-label="Visualizar"><i class="fa-regular fa-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__category">Conjunto</p>
+              <h3 class="product-card__name">Conjunto Blossom Noir</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>(48)</span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price">R$ 289,90</span>
+              </div>
+              <button class="btn btn--add-cart" data-id="1">
+                <i class="fa-regular fa-bag-shopping"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card" data-id="2" data-name="Rendas da Lua Cheia" data-price="199.90">
+            <div class="product-card__media">
+              <div class="product-card__img-placeholder" style="--p-color:#1a0d2e;">
+                <i class="fa-light fa-moon-stars"></i>
+              </div>
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−20%</span>
+              </div>
+              <div class="product-card__hover-actions">
+                <button class="hover-btn" aria-label="Favoritar"><i class="fa-regular fa-heart"></i></button>
+                <button class="hover-btn" aria-label="Visualizar"><i class="fa-regular fa-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__category">Lingerie</p>
+              <h3 class="product-card__name">Rendas da Lua Cheia</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(117)</span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price--old">R$ 249,90</span>
+                <span class="product-card__price">R$ 199,90</span>
+              </div>
+              <button class="btn btn--add-cart" data-id="2">
+                <i class="fa-regular fa-bag-shopping"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card" data-id="3" data-name="Seda Veneziana" data-price="349.00">
+            <div class="product-card__media">
+              <div class="product-card__img-placeholder" style="--p-color:#3a1a00;">
+                <i class="fa-light fa-sparkles"></i>
+              </div>
+              <div class="product-card__badges">
+                <span class="badge badge--exclusive">Exclusivo</span>
+              </div>
+              <div class="product-card__hover-actions">
+                <button class="hover-btn" aria-label="Favoritar"><i class="fa-regular fa-heart"></i></button>
+                <button class="hover-btn" aria-label="Visualizar"><i class="fa-regular fa-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__category">Lingerie Premium</p>
+              <h3 class="product-card__name">Seda Veneziana</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>(82)</span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price">R$ 349,00</span>
+              </div>
+              <button class="btn btn--add-cart" data-id="3">
+                <i class="fa-regular fa-bag-shopping"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card" data-id="4" data-name="Pijama Velours Rose" data-price="279.90">
+            <div class="product-card__media">
+              <div class="product-card__img-placeholder" style="--p-color:#3b1a2a;">
+                <i class="fa-light fa-flower"></i>
+              </div>
+              <div class="product-card__badges">
+                <span class="badge badge--new">Novo</span>
+              </div>
+              <div class="product-card__hover-actions">
+                <button class="hover-btn" aria-label="Favoritar"><i class="fa-regular fa-heart"></i></button>
+                <button class="hover-btn" aria-label="Visualizar"><i class="fa-regular fa-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__category">Pijama</p>
+              <h3 class="product-card__name">Pijama Velours Rose</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>(63)</span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price">R$ 279,90</span>
+              </div>
+              <button class="btn btn--add-cart" data-id="4">
+                <i class="fa-regular fa-bag-shopping"></i> Adicionar ao Carrinho
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="products__cta">
+          <a href="#" class="btn btn--outline">Ver Toda a Coleção</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ BANNER MID ══════════════ -->
+    <section class="mid-banner" id="ofertas">
+      <div class="mid-banner__content">
+        <p class="mid-banner__label">Oferta Especial · Tempo Limitado</p>
+        <h2 class="mid-banner__title">Até <em>40% off</em><br />na Coleção Outono</h2>
+        <p class="mid-banner__sub">Use o cupom <strong>VENUS40</strong> no checkout e ganhe frete grátis.</p>
+        <a href="#" class="btn btn--primary btn--lg">Garantir Desconto</a>
+      </div>
+      <div class="mid-banner__decor"></div>
+    </section>
+
+    <!-- ══════════════ DEPOIMENTOS ══════════════ -->
+    <section class="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Quem usa, aprova</p>
+          <h2 class="section-header__title">O que nossas clientes dizem</h2>
+          <div class="section-header__line"></div>
+        </header>
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Qualidade impecável. Cada peça parece ter sido feita especialmente para mim. Me sinto uma deusa!"</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">A</div>
+              <div>
+                <strong>Ana Luiza</strong>
+                <span>São Paulo, SP</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Entrega rápida, embalagem luxuosa e as peças são ainda mais lindas do que nas fotos. Comprarei sempre!"</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">C</div>
+              <div>
+                <strong>Camila Ferreira</strong>
+                <span>Rio de Janeiro, RJ</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"A troca foi simples e o atendimento foi excepcional. Marca que cuida das clientes de verdade."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">M</div>
+              <div>
+                <strong>Marina Souza</strong>
+                <span>Belo Horizonte, MG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__top-inner">
+
+        <div class="footer__brand">
+          <a href="#" class="logo logo--light">
+            <span class="logo__symbol">♀</span>
+            <span class="logo__text">Encanto<em>de Vênus</em></span>
+          </a>
+          <p>Lingerie de luxo para celebrar a essência feminina em cada detalhe.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest" class="social-link"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Sustentabilidade</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Blog de Moda</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h4>Receba Novidades</h4>
+          <p>Assine e seja a primeira a saber das nossas coleções exclusivas.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="seu@email.com" aria-label="E-mail para newsletter" />
+            <button class="btn btn--primary" type="button">Assinar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2025 Encanto de Vênus. Todos os direitos reservados.</p>
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fa-brands fa-cc-paypal" title="PayPal"></i>
+          <i class="fa-brands fa-pix" title="Pix"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" id="cartToast" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="cartToastMsg">Produto adicionado!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
